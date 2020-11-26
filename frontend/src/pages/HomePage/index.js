@@ -88,7 +88,7 @@ class HomePage extends React.Component {
                   <InputGroup>
                     <FormControl
                       autoFocus={true}
-                      defaultValue={`http://localhost:3000/${code}/stats`}
+                      defaultValue={`http://localhost:3000/${code}`}
                       ref={(input) => (this.inputURL = input)}
                     ></FormControl>
                     <InputGroup.Append>

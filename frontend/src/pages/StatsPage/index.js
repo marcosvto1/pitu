@@ -67,7 +67,7 @@ class StatsPage extends React.Component {
           </StatsContainer>
         ) : (
           <StatsContainer className="text-center">
-            <p><b>/{shortenedURL.code}</b></p>
+            <p><b>{vars.API_HOST}/{shortenedURL.code}</b></p>
             <p>Redireciona para: <br/> {shortenedURL.url} </p>
             <StatsRow>
               <StatsBox>

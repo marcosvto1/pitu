@@ -9,6 +9,8 @@ import {
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import vars from '../../configs/vars';
+
 import Header from "../../components/Header";
 import { ContentContainer, Form, AdsBlock } from "./styles";
 import ShortenedSerice from "../../services/shortenerService";
@@ -88,7 +90,7 @@ class HomePage extends React.Component {
                   <InputGroup>
                     <FormControl
                       autoFocus={true}
-                      defaultValue={`http://localhost:3000/${code}`}
+                      defaultValue={`${vars.API_HOST}/${code}`}
                       ref={(input) => (this.inputURL = input)}
                     ></FormControl>
                     <InputGroup.Append>
@@ -101,7 +103,7 @@ class HomePage extends React.Component {
                     </InputGroup.Append>
                   </InputGroup>
                   <p>
-                    Para acompanhar as estatísticas acesse http://localhost:3000/{code}/stats
+                  Para acompanhar as estatísticas acesse {vars.API_HOST}/{code}/stats
                   </p>
                 </>
               )

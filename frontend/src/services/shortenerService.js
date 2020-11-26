@@ -20,3 +20,5 @@ class ShortenerService {
     return result.data;
   }
 }
+
+export default ShortenerService;

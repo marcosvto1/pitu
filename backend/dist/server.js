@@ -6,5 +6,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
 const database_1 = __importDefault(require("./database"));
 database_1.default.sync({ force: true });
-app_1.default.listen(3000, () => {
+app_1.default.listen(3001, () => {
 });
